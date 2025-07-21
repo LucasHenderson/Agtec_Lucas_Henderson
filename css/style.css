@@ -1,0 +1,398 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #fff;
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+}
+
+header img {
+    height: 60px;
+}
+
+header input[type="text"] {
+    padding: 5px;
+    width: 450px;
+    border-radius: 10px;
+}
+
+.faixa-cores {
+  display: flex;
+  height: 8px;
+}
+
+.amarelo {
+  flex: 1;
+  background-color: #ffbf00;
+}
+
+.azul {
+  flex: 1;
+  background-color: #004494;
+}
+
+.verde {
+  flex: 1;
+  background-color: #007f3e;
+}
+
+.social-icons img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+nav {
+    background: #004494;
+    color: white;
+    height: 50px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.principal {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.principal img {
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.principal h1 {
+    color: #004494;
+}
+
+.texto-informativo {
+    width: 400px;
+    padding: 20px;
+    text-align: justify;
+}
+
+.texto-informativo a {
+    font-size: 12px;
+    font: bold;
+}
+.noticias {
+  padding: 20px;
+}
+
+.mais-noticias {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.mais-noticias h2 {
+  color: #004494;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mais-noticias button {
+  background-color: #004494;
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.carrossel-wrapper {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.seta {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 68, 148, 0.8);
+  color: white;
+  border: none;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  z-index: 2;
+  transition: background 0.3s;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.seta:hover {
+  background-color: rgba(0, 68, 148, 1);
+}
+
+.seta.esquerda {
+  left: 10px;
+}
+
+.seta.direita {
+  right: 10px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px 0;
+   overflow-x: hidden;
+}
+
+.cards-menores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 50px 0;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  width: 250px;
+  height: 300px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.card-menor {
+  width: 260px;
+  height: 200px;
+  background-color: #e6f2ff;
+  border-radius: 10px;
+}
+.card-menor:hover {
+  transition: 0.8s;
+  background-color: #b7d9ff;
+}
+.card-menor h1{
+  font-size: 16px;
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  color: #004494;
+}
+
+.card-menor p{
+  margin: 10px;
+}
+
+.card-menor a{
+  margin-left: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #004494;
+}
+
+.card img {
+  position: absolute;
+  top: 29%;
+  left: 50%;
+  width: 250px;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  width: 244px;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  padding: 3px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #004494;
+}
+
+.informacoes-card {
+    margin-top: 180px;
+}
+
+.informacoes-card h1 {
+    color: #004494;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.faixa-amarela {
+  background: #ffbf00;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  padding: 50px;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.faixa-amarela img {
+  width: 400px;
+  height: 225px;
+}
+
+.faixa-amarela img:hover {
+  box-shadow: 0px 0px 10px 10px #8e6a00;
+  transition: 1s;
+}
+
+.servicos {
+    background: #004494;
+    color: white;
+    padding: 50px;
+}
+
+.barra-de-pesquisa {
+  display: flex;
+  justify-content: center;
+}
+
+.barra-de-pesquisa input[type="text"]{
+  height: 30px;
+  width: 1000px;
+}
+
+.barra-de-pesquisa button {
+  background-color: #ffbf00;
+  color: #004494;
+  font-weight: bold;
+  padding: 9px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  outline: none;
+  border: none;
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+.botoes div {
+    background: white;
+    color: #004494;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 8px;
+}
+.stories {
+    background: #F2F2F2;
+    padding: 20px;
+    text-align: center;
+}
+.galeria {
+    background: #007f3e;
+    padding: 20px;
+    color: white;
+}
+.galeria img {
+    max-width: 100%;
+}
+.videos {
+    background: #ffbf00;
+    padding: 20px;
+}
+footer {
+    background: #004494;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 1143px) {
+   header {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 923px) {
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  header input[type="text"] {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  nav {
+    height: 100px;
+  }
+
+  nav a {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .faixa-amarela img {
+    width: 360px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 425px) {
+    nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .faixa-amarela img {
+    width: 240px;
+    height: 135px;
+  }
+}
+

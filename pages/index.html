@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <script src="../scripts/app.js"></script>
+  <title>Prefeitura de Palmas</title>
+</head>
+<body>
+  <header>
+    <img src="../imgs/logo_prefeitura.png" alt="Logo da Prefeitura de Palmas"/>
+    <input type="text" placeholder="O que você procura?">
+    <div class="social-icons">
+      <a href="https://www.facebook.com/" target="_blank" class="facebook"><i class="fab fa-facebook-f">
+        <img src="../imgs/facebook-icon.png" alt="Link para nosso Facebook"></i></a>
+      <a href="https://x.com/" target="_blank" class="twitter"><i class="fab fa-twitter">
+        <img src="../imgs/twitter-icon.png" alt="Link para nosso Twitter"></i></a>
+      <a href="https://www.instagram.com/" target="_blank" class="instagram"><i class="fab fa-instagram">
+        <img src="../imgs/instagram-icon.png" alt="Link para nosso Instagram"></i></a>
+      <a href="https://www.youtube.com/" target="_blank" class="youtube"><i class="fab fa-youtube">
+        <img src="../imgs/youtube-icon.png" alt="Link para nosso YouTube"></i></a>
+    </div>
+  </header>
+  <div class="faixa-cores">
+    <div class="amarelo"></div>
+    <div class="azul"></div>
+    <div class="verde"></div>
+  </div>
+  <nav>
+    <a onclick="exibirAlerta()">OUVIDORIA</a>
+    <a onclick="exibirAlerta()">PORTAL DA TRANSPARÊNCIA</a>
+    <a onclick="exibirAlerta()">CONTATO</a>
+  </nav>
+
+  <section class="principal">
+    <img src="../imgs/ponte-de-palmas.jpg" alt="Imagem da ponte de Palmas">
+    <div class="texto-informativo">
+      <h1>Manutenção na ponte de Palmas</h1>
+      <p>Em Palmas, estão sendo realizadas obras de manutenção e recuperação em várias pontes, 
+        incluindo as da Avenida Teotônio Segurado, NS-02 e JK, sobre os córregos Brejo Comprido e Sussuapara. 
+        Além disso, a ponte que liga Palmas a 
+        Luzimangues terá interdição parcial para manutenção da iluminação e aterro. </p>
+      <a href="#">LER MAIS...</a>
+    </div>
+  </section>
+
+  <section class="noticias">
+  <div class="mais-noticias">
+    <h2>Últimas Notícias</h2>
+    <button onclick="exibirAlerta()">MAIS NOTÍCIAS</button>
+  </div>
+
+  <div class="carrossel-wrapper">
+    <button class="seta esquerda">&#10094;</button>
+
+    <div class="cards" id="carrossel">
+      <div class="card">
+        <img src="../imgs/palacio-araguaia-palmas-governo-tocantins.jpg" alt="Foto do palácio de Palmas">
+        <div class="text-overlay">FOTO PALÁCIO</div>
+        <div class="informacoes-card">
+          <h1>TÍTULO DA NOTÍCIA</h1>
+          <p>Apenas um texto qualquer sem nenhuma informação. Feito apenas para teste de tamanho da fonte e etc.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../imgs/Parque-Cesarmar.jpg" alt="Foto do parque Cesarmar">
+        <div class="text-overlay">FOTO PARQUE</div>
+        <div class="informacoes-card">
+          <h1>TÍTULO DA NOTÍCIA</h1>
+          <p>Apenas um texto qualquer sem nenhuma informação. Feito apenas para teste de tamanho da fonte e etc.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../imgs/espaco-cultural.jpg" alt="Foto do espaço cultural">
+        <div class="text-overlay">FOTO ESPAÇO CULTURAL</div>
+        <div class="informacoes-card">
+          <h1>TÍTULO DA NOTÍCIA</h1>
+          <p>Apenas um texto qualquer sem nenhuma informação. Feito apenas para teste de tamanho da fonte e etc.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../imgs/Avenida_Juscelino_Kubitschek,_sentido_leste,_Palmas,_Tocantins.png" alt="Foto da avenida JK">
+        <div class="text-overlay">FOTO AV. JK</div>
+        <div class="informacoes-card">
+          <h1>TÍTULO DA NOTÍCIA</h1>
+          <p>Apenas um texto qualquer sem nenhuma informação. Feito apenas para teste de tamanho da fonte e etc.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../imgs/unitins.jpeg" alt="Foto da faculdade Unitins">
+        <div class="text-overlay">FOTO UNITINS</div>
+        <div class="informacoes-card">
+          <h1>TÍTULO DA NOTÍCIA</h1>
+          <p>Apenas um texto qualquer sem nenhuma informação. Feito apenas para teste de tamanho da fonte e etc.</p>
+        </div>
+      </div>
+    </div>
+
+    <button class="seta direita">&#10095;</button>
+  </div>
+</section>
+  
+  <div class="cards-menores">
+    <div class="card-menor">
+      <h1>TÍTULO DA NOTÍCIA</h1>
+      <p>Apenas um texto qualquer sem nenhuma informação. Feito apenas para teste de tamanho da fonte e etc.</p>
+      <a onclick="exibirAlerta()">LER MAIS...</a>
+    </div>
+    <div class="card-menor">
+      <h1>TÍTULO DA NOTÍCIA</h1>
+      <p>Apenas um texto qualquer sem nenhuma informação. Feito apenas para teste de tamanho da fonte e etc.</p>
+      <a onclick="exibirAlerta()">LER MAIS...</a>
+    </div>
+    <div class="card-menor">
+      <h1>TÍTULO DA NOTÍCIA</h1>
+      <p>Apenas um texto qualquer sem nenhuma informação. Feito apenas para teste de tamanho da fonte e etc.</p>
+      <a onclick="exibirAlerta()">LER MAIS...</a>
+    </div>
+    <div class="card-menor">
+      <h1>TÍTULO DA NOTÍCIA</h1>
+      <p>Apenas um texto qualquer sem nenhuma informação. Feito apenas para teste de tamanho da fonte e etc.</p>
+      <a onclick="exibirAlerta()">LER MAIS...</a>
+    </div>
+  </div>
+  
+  <div class="mais-noticias">
+    <h2></h2>
+    <button onclick="exibirAlerta()">MAIS NOTÍCIAS</button>
+  </div>
+
+  <section class="faixa-amarela">
+    <img src="../imgs/Avenida_Juscelino_Kubitschek,_sentido_leste,_Palmas,_Tocantins.png" alt="Foto da avenida JK">
+    <img src="../imgs/espaco-cultural.jpg" alt="Foto do espaço cultural">
+    <img src="../imgs/ponte-de-palmas.jpg" alt="Foto da ponte de Palmas">
+  </section>
+
+  <section class="servicos">
+    <div class="barra-de-pesquisa">
+      <input type="text" placeholder="O que você procura?">
+      <button>BUSCAR</button>
+    </div>
+    <div class="botoes">
+      <div>Nota Fiscal Eletrônica</div>
+      <div>Diário Oficial</div>
+      <div>Alvarás</div>
+      <div>Consulta</div>
+      <div>Emissão de IPTU</div>
+      <div>Portal do Contribuinte</div>
+      <div>Resolve Palmas</div>
+      <div>CND</div>
+    </div>
+  </section>
+
+  <section class="stories">
+    <h3>Stories</h3>
+    <p>Ícones e carrossel de destaques</p>
+  </section>
+
+  <section class="galeria">
+    <h3>Galeria de Fotos</h3>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Palmas_TO_-_Vista_Parcial_da_Pra%C3%A7a_dos_Girass%C3%B3is.jpg" alt="Praça Palmas">
+  </section>
+
+  <section class="videos">
+    <h3>Vídeos</h3>
+    <p>Vídeos institucionais da cidade</p>
+  </section>
+
+  <footer>
+    <p>Prefeitura de Palmas - Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>
