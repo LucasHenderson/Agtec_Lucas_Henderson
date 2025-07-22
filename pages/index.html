@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="../css/style.css">
-  <script src="../scripts/app.js"></script>
+  <script src="../scripts/app.js" defer></script>
   <title>Prefeitura de Palmas</title>
 </head>
 <body>
@@ -137,18 +137,89 @@
 
   <section class="servicos">
     <div class="barra-de-pesquisa">
+      <img src="../imgs/lupa.png" alt="Lupa">
       <input type="text" placeholder="O que você procura?">
-      <button>BUSCAR</button>
+      <button>SERVIÇOS</button>
+      <button>TRANSPARÊNCIA</button>
+      <button>GOVERNO</button>
+      <button id="buscar">BUSCAR</button>
     </div>
-    <div class="botoes">
-      <div>Nota Fiscal Eletrônica</div>
-      <div>Diário Oficial</div>
-      <div>Alvarás</div>
-      <div>Consulta</div>
-      <div>Emissão de IPTU</div>
-      <div>Portal do Contribuinte</div>
-      <div>Resolve Palmas</div>
-      <div>CND</div>
+
+    <div class="tabs">
+      <button class="tab active" data-tab="cidadao">CIDADÃO</button>
+      <button class="tab" data-tab="empresa">EMPRESA</button>
+      <button class="tab" data-tab="servidor">SERVIDOR</button>
+    </div>
+
+    <div class="content">
+      <div class="tab-content active" id="cidadao">
+        <div class="botoes">
+          <div>
+            Nota Fiscal Eletrônica
+            <img src="../imgs/prefeitura-icon.png" alt="Nota Fiscal Eletrônica">
+          </div>
+          <div>
+            Diário Oficial
+            <img src="../imgs/prefeitura-icon.png" alt="Diário Oficial">
+          </div>
+          <div>
+            Alvarás
+            <img src="../imgs/prefeitura-icon.png" alt="Alvarás">
+          </div>
+          <div>
+            Consulta
+            <img src="../imgs/prefeitura-icon.png" alt="Consulta">
+          </div>
+          <div>
+            Emissão de IPTU
+            <img src="../imgs/prefeitura-icon.png" alt="Emissão de IPTU">
+          </div>
+          <div>
+            Portal do Contribuinte
+            <img src="../imgs/prefeitura-icon.png" alt="Portal do Contribuinte">
+          </div>
+          <div>
+            Resolve Palmas
+            <img src="../imgs/prefeitura-icon.png" alt="Resolve Palmas">
+          </div>
+          <div>
+            CND
+            <img src="../imgs/prefeitura-icon.png" alt="CND">
+          </div>
+        </div>
+      </div>
+      <div class="tab-content" id="empresa">
+        <div class="botoes">
+          <div>
+            EMPRESA 1
+            <img src="../imgs/prefeitura-icon.png" alt="EMPRESA 1">
+          </div>
+          <div>
+            EMPRESA 2
+            <img src="../imgs/prefeitura-icon.png" alt="EMPRESA 2">
+          </div>
+          <div>
+            EMPRESA 3
+            <img src="../imgs/prefeitura-icon.png" alt="EMPRESA 3">
+          </div>
+        </div>
+      </div>
+      <div class="tab-content" id="servidor">
+        <div class="botoes">
+          <div>
+            SERVIDOR 1
+            <img src="../imgs/prefeitura-icon.png" alt="SERVIDOR 1">
+          </div>
+          <div>
+            SERVIDOR 2
+            <img src="../imgs/prefeitura-icon.png" alt="SERVIDOR 2">
+          </div>
+          <div>
+            SERVIDOR 3
+            <img src="../imgs/prefeitura-icon.png" alt="SERVIDOR 3">
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 

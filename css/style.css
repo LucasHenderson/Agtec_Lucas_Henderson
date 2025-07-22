@@ -280,9 +280,49 @@ nav a {
 }
 
 .servicos {
-    background: #004494;
-    color: white;
-    padding: 50px;
+  background: #004494;
+  color: white;
+  padding: 50px;
+}
+
+.tabs {
+  display: flex;
+  background-color: #004494;
+  padding: 40px 0px 0px 80px;
+}
+
+.tab {
+  color: #ccc;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.tab.active {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 4px solid white;
+}
+
+.content {
+  background-color: #004494;
+  padding: 20px;
+  border-top: none;
+  font-size: 16px;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
 }
 
 .barra-de-pesquisa {
@@ -290,12 +330,24 @@ nav a {
   justify-content: center;
 }
 
-.barra-de-pesquisa input[type="text"]{
-  height: 30px;
-  width: 1000px;
+.barra-de-pesquisa img{
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  padding: 20px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
-.barra-de-pesquisa button {
+.barra-de-pesquisa input[type="text"]{
+  height: 58px;
+  width: 600px;
+  background-color: white;
+  outline: none;
+  border: none;
+}
+
+.barra-de-pesquisa button[id="buscar"] {
   background-color: #ffbf00;
   color: #004494;
   font-weight: bold;
@@ -306,46 +358,68 @@ nav a {
   border: none;
 }
 
+.barra-de-pesquisa button {
+  background-color: white;
+  color: #004494;
+  font-weight: bold;
+  padding: 9px;
+  outline: none;
+  border: none;
+}
+
 .botoes {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 10px;
-    margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
 }
 .botoes div {
-    background: white;
-    color: #004494;
-    padding: 15px;
-    text-align: center;
-    font-weight: bold;
-    border-radius: 8px;
+  position: relative;
+  height: 120px;
+  width: 160px;
+  background: white;
+  color: #004494;
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 8px;
 }
+
+.botoes img {
+  position: absolute;
+  height: auto;
+  width: 80px;
+  left: 50%;
+  top: 40%; /* ajuste aqui para descer a imagem */
+  transform: translateX(-50%);
+}
+
 .stories {
-    background: #F2F2F2;
-    padding: 20px;
-    text-align: center;
+  background: #F2F2F2;
+  padding: 20px;
+  text-align: center;
 }
 .galeria {
-    background: #007f3e;
-    padding: 20px;
-    color: white;
+  background: #007f3e;
+  padding: 20px;
+  color: white;
 }
 .galeria img {
-    max-width: 100%;
+  max-width: 100%;
 }
 .videos {
-    background: #ffbf00;
-    padding: 20px;
+  background: #ffbf00;
+  padding: 20px;
 }
 footer {
-    background: #004494;
-    color: white;
-    text-align: center;
-    padding: 20px;
+  background: #004494;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
 
 @media (max-width: 1143px) {
-   header {
+    header {
     flex-direction: column;
     align-items: center;
     gap: 15px;
