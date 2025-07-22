@@ -23,17 +23,32 @@ if (carrossel && btnEsquerda && btnDireita) {
 });
 
 const tabs = document.querySelectorAll('.tab');
-    const contents = document.querySelectorAll('.tab-content');
+const contents = document.querySelectorAll('.tab-content');
 
-    tabs.forEach(tab => {
-      tab.addEventListener('click', () => {
-        // Remover classe ativa de todas as abas e conteúdos
-        tabs.forEach(t => t.classList.remove('active'));
-        contents.forEach(c => c.classList.remove('active'));
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    // Remover classe ativa de todas as abas e conteúdos
+    tabs.forEach(t => t.classList.remove('active'));
+    contents.forEach(c => c.classList.remove('active'));
 
-        // Adicionar classe ativa à aba clicada e ao conteúdo correspondente
-        tab.classList.add('active');
-        const target = tab.getAttribute('data-tab');
-        document.getElementById(target).classList.add('active');
-      });
-    });
+    // Adicionar classe ativa à aba clicada e ao conteúdo correspondente
+    tab.classList.add('active');
+    const target = tab.getAttribute('data-tab');
+    document.getElementById(target).classList.add('active');
+  });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const carousel = document.getElementById('storiesCarousel');
+  const leftBtn = document.querySelector('.story-arrow.left');
+  const rightBtn = document.querySelector('.story-arrow.right');
+  const scrollAmount = 150;
+
+  leftBtn.addEventListener('click', () => {
+    carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+  });
+
+  rightBtn.addEventListener('click', () => {
+    carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  });
+});

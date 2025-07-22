@@ -394,11 +394,80 @@ nav a {
   transform: translateX(-50%);
 }
 
-.stories {
-  background: #F2F2F2;
+.stories-section {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  background-color: white;
   padding: 20px;
-  text-align: center;
 }
+
+.stories-section h2 {
+  color: #004494;
+  margin-right: 40px;
+}
+
+.stories-carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.stories-carousel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.story-item {
+  min-width: 100px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.story-item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #004494;
+  object-fit: cover;
+}
+
+.story-item p {
+  font-size: 12px;
+  margin-top: 8px;
+  max-width: 100px;
+  color: #333;
+}
+
+.story-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #004494;
+  padding: 5px 10px;
+  z-index: 1;
+}
+
+.story-arrow.left {
+  left: 0;
+}
+
+.story-arrow.right {
+  right: 0;
+}
+
 .galeria {
   background: #007f3e;
   padding: 20px;
