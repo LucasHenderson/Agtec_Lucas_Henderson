@@ -9,7 +9,7 @@
 </head>
 <body>
   <header>
-    <img src="../imgs/logo_prefeitura.png" alt="Logo da Prefeitura de Palmas"/>
+    <img onclick="exibirAlerta()" src="../imgs/logo_prefeitura.png" alt="Logo da Prefeitura de Palmas"/>
     <input type="text" placeholder="O que você procura?">
     <div class="social-icons">
       <a href="https://www.facebook.com/" target="_blank" class="facebook"><i class="fab fa-facebook-f">
@@ -28,9 +28,9 @@
     <div class="verde"></div>
   </div>
   <nav>
-    <a onclick="exibirAlerta()">OUVIDORIA</a>
-    <a onclick="exibirAlerta()">PORTAL DA TRANSPARÊNCIA</a>
-    <a onclick="exibirAlerta()">CONTATO</a>
+    <button class="tab active" data-tab="cidadao">OUVIDORIA</button>
+    <button class="tab" data-tab="empresa">PORTAL DA TRANSPARÊNCIA</button>
+    <button class="tab" data-tab="servidor">CONTATO</button>
   </nav>
 
   <section class="principal">
@@ -41,7 +41,7 @@
         incluindo as da Avenida Teotônio Segurado, NS-02 e JK, sobre os córregos Brejo Comprido e Sussuapara. 
         Além disso, a ponte que liga Palmas a 
         Luzimangues terá interdição parcial para manutenção da iluminação e aterro. </p>
-      <a href="#">LER MAIS...</a>
+      <a onclick="exibirAlerta()" href="#">LER MAIS...</a>
     </div>
   </section>
 
@@ -55,7 +55,7 @@
     <button class="seta esquerda">&#10094;</button>
 
     <div class="cards" id="carrossel">
-      <div class="card">
+      <div onclick="exibirAlerta()" class="card">
         <img src="../imgs/palacio-araguaia-palmas-governo-tocantins.jpg" alt="Foto do palácio de Palmas">
         <div class="text-overlay">FOTO PALÁCIO</div>
         <div class="informacoes-card">
@@ -63,7 +63,7 @@
           <p>Apenas um texto qualquer sem nenhuma informação. Feito apenas para teste de tamanho da fonte e etc.</p>
         </div>
       </div>
-      <div class="card">
+      <div onclick="exibirAlerta()" class="card">
         <img src="../imgs/Parque-Cesarmar.jpg" alt="Foto do parque Cesarmar">
         <div class="text-overlay">FOTO PARQUE</div>
         <div class="informacoes-card">
@@ -71,7 +71,7 @@
           <p>Apenas um texto qualquer sem nenhuma informação. Feito apenas para teste de tamanho da fonte e etc.</p>
         </div>
       </div>
-      <div class="card">
+      <div onclick="exibirAlerta()" class="card">
         <img src="../imgs/espaco-cultural.jpg" alt="Foto do espaço cultural">
         <div class="text-overlay">FOTO ESPAÇO CULTURAL</div>
         <div class="informacoes-card">
@@ -79,7 +79,7 @@
           <p>Apenas um texto qualquer sem nenhuma informação. Feito apenas para teste de tamanho da fonte e etc.</p>
         </div>
       </div>
-      <div class="card">
+      <div onclick="exibirAlerta()" class="card">
         <img src="../imgs/Avenida_Juscelino_Kubitschek,_sentido_leste,_Palmas,_Tocantins.png" alt="Foto da avenida JK">
         <div class="text-overlay">FOTO AV. JK</div>
         <div class="informacoes-card">
@@ -87,7 +87,7 @@
           <p>Apenas um texto qualquer sem nenhuma informação. Feito apenas para teste de tamanho da fonte e etc.</p>
         </div>
       </div>
-      <div class="card">
+      <div onclick="exibirAlerta()" class="card">
         <img src="../imgs/unitins.jpeg" alt="Foto da faculdade Unitins">
         <div class="text-overlay">FOTO UNITINS</div>
         <div class="informacoes-card">
@@ -137,12 +137,12 @@
 
   <section class="servicos">
     <div class="barra-de-pesquisa">
-      <img src="../imgs/lupa.png" alt="Lupa">
+      <img onclick="exibirAlerta()" src="../imgs/lupa.png" alt="Lupa">
       <input type="text" placeholder="O que você procura?">
-      <button>SERVIÇOS</button>
-      <button>TRANSPARÊNCIA</button>
-      <button>GOVERNO</button>
-      <button id="buscar">BUSCAR</button>
+      <button onclick="exibirAlerta()">SERVIÇOS</button>
+      <button onclick="exibirAlerta()">TRANSPARÊNCIA</button>
+      <button onclick="exibirAlerta()">GOVERNO</button>
+      <button onclick="exibirAlerta()" id="buscar">BUSCAR</button>
     </div>
 
     <div class="tabs">
@@ -154,39 +154,39 @@
     <div class="content">
       <div class="tab-content active" id="cidadao">
         <div class="botoes">
-          <div>
+          <div onclick="exibirAlerta()">
             Nota Fiscal Eletrônica
             <img src="../imgs/prefeitura-icon.png" alt="Nota Fiscal Eletrônica">
           </div>
-          <div>
+          <div onclick="exibirAlerta()">
             Diário Oficial
             <img src="../imgs/prefeitura-icon.png" alt="Diário Oficial">
           </div>
-          <div>
+          <div onclick="exibirAlerta()">
             Alvarás
             <img src="../imgs/prefeitura-icon.png" alt="Alvarás">
           </div>
-          <div>
+          <div onclick="exibirAlerta()">
             Consulta
             <img src="../imgs/prefeitura-icon.png" alt="Consulta">
           </div>
-          <div>
+          <div onclick="exibirAlerta()">
             Emissão de IPTU
             <img src="../imgs/prefeitura-icon.png" alt="Emissão de IPTU">
           </div>
-          <div>
+          <div onclick="exibirAlerta()">
             Portal do Contribuinte
             <img src="../imgs/prefeitura-icon.png" alt="Portal do Contribuinte">
           </div>
-          <div>
+          <div onclick="exibirAlerta()">
             Resolve Palmas
             <img src="../imgs/prefeitura-icon.png" alt="Resolve Palmas">
           </div>
-          <div>
+          <div onclick="exibirAlerta()">
             CND
             <img src="../imgs/prefeitura-icon.png" alt="CND">
           </div>
-          <div>
+          <div onclick="exibirAlerta()">
             Outros
             <img src="../imgs/prefeitura-icon.png" alt="Outros">
           </div>
@@ -194,15 +194,15 @@
       </div>
       <div class="tab-content" id="empresa">
         <div class="botoes">
-          <div>
+          <div onclick="exibirAlerta()">
             EMPRESA 1
             <img src="../imgs/prefeitura-icon.png" alt="EMPRESA 1">
           </div>
-          <div>
+          <div onclick="exibirAlerta()">
             EMPRESA 2
             <img src="../imgs/prefeitura-icon.png" alt="EMPRESA 2">
           </div>
-          <div>
+          <div onclick="exibirAlerta()">
             EMPRESA 3
             <img src="../imgs/prefeitura-icon.png" alt="EMPRESA 3">
           </div>
@@ -210,22 +210,22 @@
       </div>
       <div class="tab-content" id="servidor">
         <div class="botoes">
-          <div>
+          <div onclick="exibirAlerta()">
             SERVIDOR 1
             <img src="../imgs/prefeitura-icon.png" alt="SERVIDOR 1">
           </div>
-          <div>
+          <div onclick="exibirAlerta()">
             SERVIDOR 2
             <img src="../imgs/prefeitura-icon.png" alt="SERVIDOR 2">
           </div>
-          <div>
+          <div onclick="exibirAlerta()">
             SERVIDOR 3
             <img src="../imgs/prefeitura-icon.png" alt="SERVIDOR 3">
           </div>
         </div>
       </div>
       <div class="saiba-mais">
-        <button class="botao-saiba-mais">saiba mais</button>
+        <button onclick="exibirAlerta()" class="botao-saiba-mais">saiba mais</button>
       </div>
     </div>
   </section>
@@ -242,23 +242,23 @@
   <div class="stories-carousel-wrapper">
     <div class="stories-carousel" id="storiesCarousel">
       <div class="story-item">
-        <img src="../imgs/instagram-icon.png" alt="Imagem 1">
+        <img onclick="exibirAlerta()" src="../imgs/instagram-icon.png" alt="Imagem 1">
         <p>Vagas abertas para aprender música no Conservatório de MPB</p>
       </div>
       <div class="story-item">
-        <img src="../imgs/instagram-icon.png" alt="Imagem 2">
+        <img onclick="exibirAlerta()" src="../imgs/instagram-icon.png" alt="Imagem 2">
         <p>Cuidados com os animais do Zoo no frio</p>
       </div>
       <div class="story-item">
-        <img src="../imgs/instagram-icon.png" alt="Imagem 3">
+        <img onclick="exibirAlerta()" src="../imgs/instagram-icon.png" alt="Imagem 3">
         <p>Novas mudas no Jardim Botânico</p>
       </div>
       <div class="story-item">
-        <img src="../imgs/instagram-icon.png" alt="Imagem 4">
+        <img onclick="exibirAlerta()" src="../imgs/instagram-icon.png" alt="Imagem 4">
         <p>Campanha do Agasalho</p>
       </div>
       <div class="story-item">
-        <img src="../imgs/instagram-icon.png" alt="Imagem 5">
+        <img onclick="exibirAlerta()" src="../imgs/instagram-icon.png" alt="Imagem 5">
         <p>Reforma no centro de esportes no Sítio Cercado</p>
       </div>
     </div>
@@ -335,7 +335,7 @@
 </div>
 
 <header>
-  <img src="../imgs/logo_prefeitura.png" alt="Logo da Prefeitura de Palmas"/>
+  <img onclick="exibirAlerta()" src="../imgs/logo_prefeitura.png" alt="Logo da Prefeitura de Palmas"/>
   <input type="text" placeholder="O que você procura?">
   <div class="social-icons">
     <a href="https://www.facebook.com/" target="_blank" class="facebook"><i class="fab fa-facebook-f">
@@ -349,8 +349,40 @@
   </div>
 </header>
 
+<section class="nav-footer">
+  <div class="menu-nav-footer">
+    <h1>MENU</h1>
+    <a href="#" onclick="exibirAlerta()">OUVIDORIA</a>
+    <a href="#" onclick="exibirAlerta()">PORTAL DE TRANSPARÊNCIA</a>
+    <a href="#" onclick="exibirAlerta()">CONTATO</a>
+  </div>
+  <div class="menu-nav-footer">
+    <h1>NOTÍCIAS</h1>
+    <a href="#" onclick="exibirAlerta()">MAIS NOTÍCITAS</a>
+  </div>
+  <div class="menu-nav-footer">
+    <h1>SERVIÇOS</h1>
+    <a href="#" onclick="exibirAlerta()">CIDADÃO</a>
+    <a href="#" onclick="exibirAlerta()">EMPRESA</a>
+    <a href="#" onclick="exibirAlerta()">SERVIDOR</a>
+  </div>
+  <div class="menu-nav-footer">
+    <h1>FOTOS</h1>
+    <a href="#" onclick="exibirAlerta()">VÍDEOS</a>
+  </div>
+  <div class="menu-nav-footer">
+    <h1>CONTATOS</h1>
+    <a href="#" onclick="exibirAlerta()">PHASELLUS</a>
+    <a href="#" onclick="exibirAlerta()">TEMPOR</a>
+    <a href="#" onclick="exibirAlerta()">FELIZ EU</a>
+  </div>
+  <div class="menu-nav-footer">
+    <img src="../imgs/prefeitura-icon.png" alt="Ícone da prefeitura de Palmas">
+  </div>
+</section>
+
 <footer>
-  <p>Prefeitura de Palmas - Todos os direitos reservados</p>
+  <p>Prefeitura de Palmas - Todos os direitos reservados - Lucas Henderson Vieira Cunha</p>
 </footer>
 
 </body>

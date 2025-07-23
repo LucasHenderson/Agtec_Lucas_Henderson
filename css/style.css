@@ -626,6 +626,36 @@ footer {
   padding: 20px;
 }
 
+.nav-footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 80px;
+  padding: 40px;
+}
+
+.menu-nav-footer {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  gap: 30px;
+}
+
+.menu-nav-footer h1 {
+  color: #004494;
+}
+
+.menu-nav-footer a {
+  color: #004494;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.menu-nav-footer img {
+  width: 160px;
+  height: auto;
+}
+
 @media (max-width: 1143px) {
     header {
     flex-direction: column;
