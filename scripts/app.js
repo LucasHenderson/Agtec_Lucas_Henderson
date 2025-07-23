@@ -27,11 +27,9 @@ const contents = document.querySelectorAll('.tab-content');
 
 tabs.forEach(tab => {
   tab.addEventListener('click', () => {
-    // Remover classe ativa de todas as abas e conteúdos
     tabs.forEach(t => t.classList.remove('active'));
     contents.forEach(c => c.classList.remove('active'));
 
-    // Adicionar classe ativa à aba clicada e ao conteúdo correspondente
     tab.classList.add('active');
     const target = tab.getAttribute('data-tab');
     document.getElementById(target).classList.add('active');
