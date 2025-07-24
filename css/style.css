@@ -58,13 +58,8 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
+    flex-wrap: wrap;
     gap: 50px;
-}
-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    cursor: pointer;
 }
 
 .principal {
@@ -231,16 +226,17 @@ nav a {
   position: absolute;
   top: 29%;
   left: 50%;
-  width: 250px;
+  width: 240px;
+  height: 135px;
   transform: translate(-50%, -50%);
   border-radius: 10px;
 }
 
 .text-overlay {
   position: absolute;
-  top: 52%;
+  top: 50%;
   left: 50%;
-  width: 244px;
+  width: 235px;
   transform: translate(-50%, -50%);
   color: white;
   font-size: 12px;
@@ -291,11 +287,12 @@ nav a {
 }
 
 .tabs {
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   background-color: #004494;
-  padding: 40px 0px 0px 80px;
+  padding: 40px 0px 40px 0px;
 }
 
 .tab {
@@ -318,7 +315,9 @@ nav a {
 }
 
 .content {
-  width: 1200px;
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   background-color: #004494;
@@ -351,7 +350,8 @@ nav a {
 
 .barra-de-pesquisa input[type="text"]{
   height: 58px;
-  width: 600px;
+  max-width: 600px;
+  width: 100%;
   background-color: white;
   outline: none;
   border: none;
@@ -380,10 +380,13 @@ nav a {
 
 .botoes {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 20px;
 }
+
 .botoes div {
   position: relative;
   height: 120px;
@@ -408,8 +411,23 @@ nav a {
 
 .saiba-mais {
   display: flex;
-  justify-content: right;
-  margin-top: 20px;
+  max-width: 1200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: flex-end;
+}
+
+.botao-saiba-mais{
+  width: 100px;
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #ffbf00;
+  color: #004494;
 }
 
 .onda-inferior {
@@ -425,18 +443,6 @@ nav a {
   width: 100%;
   height: 300px;
   transform: rotate(180deg);
-}
-
-.botao-saiba-mais{
-  width: 100px;
-  color: white;
-  font-weight: bold;
-  padding: 5px 10px;
-  border-radius: 10px;
-  border: none;
-  cursor: pointer;
-  background-color: #ffbf00;
-  color: #004494;
 }
 
 .stories-section {
@@ -679,11 +685,32 @@ footer {
   }
 
   nav {
-    height: 100px;
+    flex-direction: column;
+    height: 230px;
+  }
+}
+
+@media (max-width: 700px) {
+  .barra-de-pesquisa button[id="buscar"] {
+    width: 60px;
+    font-size: 8px;
+    word-wrap: break-word;
   }
 
-  nav a {
-    font-size: 15px;
+  .barra-de-pesquisa button {
+    width: 60px;
+    font-size: 8px;
+    word-wrap: break-word;
+  }
+
+  .tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 180px;
+    gap: 20px;
+    padding: 20px 0px 0px 0px;
   }
 }
 
@@ -695,7 +722,7 @@ footer {
 }
 
 @media (max-width: 425px) {
-    nav {
+  nav {
     flex-direction: column;
     align-items: center;
     gap: 20px;
@@ -705,6 +732,10 @@ footer {
   .faixa-amarela img {
     width: 240px;
     height: 135px;
+  }
+
+  .barra-de-pesquisa input[type="text"]{
+    width: 75px;
   }
 }
 
