@@ -623,7 +623,7 @@ nav {
   color: #004494;
 }
 
-.video-maior p{
+.videos-maiores p{
   text-align: center;
   margin-top: -5px;
   background-color: white;
@@ -632,10 +632,20 @@ nav {
   font-weight: bold;
 }
 
+.video-maior {
+  width: 400px; 
+  height: 225px; 
+}
+
 .videos-menores {
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+
+.video-menor {
+  width: 240px;
+  height: 135px;
 }
 
 footer {
@@ -704,12 +714,11 @@ footer {
 
   .galeria {
     display: flex;
-    height: 2250px;
+    height: 2050px;
     flex-direction: column;
   }
 
   .foto-grande img{
-    position: relative;
     width: 480px;
     height: 270px;
   }
@@ -737,8 +746,25 @@ footer {
   }
 
   .videos {
-    top: 80%;
+    flex-wrap: nowrap;
+    top: 85%;
     left: 50%;
+    gap: 15px;
+  }
+
+  .conteudo-video {
+    width: 180px;
+  }
+
+  .videos-maiores p{
+    width: 240px;
+    padding: 10px 0px 10px 0px;
+    font-weight: bold;
+  }
+
+  .video-maior {
+    width: 240px;
+    height: 135px;
   }
 }
 
@@ -763,6 +789,41 @@ footer {
   .story-arrow.right {
     top: 60%;
     right: 12%;
+  }
+
+  .galeria {
+    margin-bottom: 900px;
+  }
+
+  .videos {
+    width: 85%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 85%;
+    left: 50%;
+    gap: 15px;
+  }
+
+  .conteudo-video {
+    width: 400px;
+  }
+
+  .videos-maiores p{
+    width: 480px;
+    padding: 10px 0px 10px 0px;
+    font-weight: bold;
+  }
+
+  .video-maior {
+    width: 480px;
+    height: 270px;
+  }
+
+  .video-menor {
+    width: 480px;
+    height: 270px;
   }
 }
 
@@ -794,6 +855,72 @@ footer {
   .faixa-amarela img {
     width: 360px;
     height: 180px;
+  }
+
+  .galeria {
+    display: flex;
+    height: 1550px;
+    flex-direction: column;
+    margin-bottom: 600px;
+  }
+
+  .foto-grande img{
+    width: 288px;
+    height: 162px;
+  }
+
+  .foto-grande-conteudo {
+    width: 268px;
+    font-size: 10px;
+    top: 15.2%;
+    left: 50%;
+  }
+
+  .fotos-menores {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .foto-menor img {
+    width: 288px;
+    height: 162px;
+  }
+
+  .foto-menor {
+    width: 288px;
+    height: 162px;
+    margin-top: 60px;
+  }
+
+  .videos {
+    width: 85%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 85%;
+    left: 50%;
+    gap: 15px;
+  }
+
+  .conteudo-video {
+    width: 400px;
+  }
+
+  .videos-maiores p{
+    width: 240px;
+    padding: 10px 0px 10px 0px;
+    font-weight: bold;
+  }
+
+  .video-maior {
+    width: 240px;
+    height: 135px;
+  }
+
+  .video-menor {
+    width: 240px;
+    height: 135px;
   }
 }
 
